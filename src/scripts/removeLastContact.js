@@ -18,7 +18,7 @@ export const removeLastContact = async () => {
       );
     }
 
-    if (contacts.lenght > 0) {
+    if (contacts.lengts > 0) {
       contacts.pop();
       await fs.writeFile(PATH_DB, JSON.stringify(contacts, null, 2), 'utf8');
       console.log('Останній контакт був успішно видалений.');
